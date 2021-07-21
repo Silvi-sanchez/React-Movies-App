@@ -2,12 +2,15 @@ import React, {useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import MovieIcon from '@material-ui/icons/Movie;'
-import WhatshotIcon from '@material-ui/icons/Whatshot'
-import SearchIcon from '@material-ui/icons/Search';
-import TvIcon from '@material-ui/icons/TV';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import HomeIcon from '@material-ui/icons/Home';
+
+// import MovieIcon from '@material-ui/icons/Movie;'
+// import WhatshotIcon from '@material-ui/icons/Whatshot'
+// import SearchIcon from '@material-ui/icons/Search';
+// import TvIcon from '@material-ui/icons/TV';
+// import FavoriteIcon from '@material-ui/icons/Favorite';
+// import HomeIcon from '@material-ui/icons/Home';
+import { Movie, Whatshot, Search, Tv, Favorite, Home } from '@material-ui/icons';
+
 import { useHistory } from 'react-router';
 
 
@@ -48,34 +51,34 @@ export default function SimpleBottomNavigation() {
     <BottomNavigationAction 
       style={{color: 'white'}}
       label="TV series"
-       icon={<HomeIcon />} 
+       icon={<Home />} 
     />
     <BottomNavigationAction
         style={{color: 'white'}}
         label="Trending"
-        icon={<WhatshotIcon />}
+        icon={<Whatshot />}
     />
     <BottomNavigationAction 
       style={{color: 'white'}}
       label="Populares"
-       icon={<FavoriteIcon />} 
+       icon={<Favorite />} 
     />
     <BottomNavigationAction 
       style={{color: 'white'}}
       label="Movies"
-       icon={<MovieIcon />} 
+       icon={<Movie />} 
     />
  
     <BottomNavigationAction 
       style={{color: 'white'}}
       label="TV series"
-       icon={<TvIcon />} 
+       icon={<Tv />} 
     />
 
     <BottomNavigationAction
       style={{color: 'white'}}
       label="Search"
-      icon={<SearchIcon />} 
+      icon={<Search/>} 
     />
 
     </BottomNavigation>
