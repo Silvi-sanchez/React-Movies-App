@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import {Container} from '@material-ui/core';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header/Header';
+import SimpleBottomNavigation from './components/MainNav';
+import Home from './Pages/Home/Home';
+import UltimosLanzamientos from './Pages/UltimosLanzamientos/UltimosLanzamientos';
+import Populares from './Pages/Populares/Populares'
+import Series from './Pages/Series/Series';
+import Busqueda from './Pages/Busqueda/Busqueda';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Header/>
+    <div className="app"></div>
+    <Container>
+      <Switch>
+      <Route path="/home" component={Home} exact/>
+        {/* <Route path="/" component={Trending} /> */}
+        <Route path="/ultimosLanzamientos" component={UltimosLanzamientos}/>
+        <Route path="/populares" component={Populares}/>
+        <Route path="/series" component={Series}/>
+        <Route path="/busqueda" component={Busqueda}/>
+
+      </Switch>
+    </Container>
+
+    <SimpleBottomNavigation/>
+    
+    </BrowserRouter>
   );
 }
 
