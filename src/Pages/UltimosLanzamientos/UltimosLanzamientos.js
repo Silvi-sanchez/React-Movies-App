@@ -3,7 +3,7 @@ import React from 'react'
 const ultimosLanzamientos = () => {
     return (
         <div>
-        <span className="pageTitle">Movies</span>
+        <span className="pageTitle">Ultimos Lanzamientos</span>
         </div>
     )
 }

@@ -3,13 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
-// import MovieIcon from '@material-ui/icons/Movie;'
-// import WhatshotIcon from '@material-ui/icons/Whatshot'
-// import SearchIcon from '@material-ui/icons/Search';
-// import TvIcon from '@material-ui/icons/TV';
-// import FavoriteIcon from '@material-ui/icons/Favorite';
-// import HomeIcon from '@material-ui/icons/Home';
-import { Movie, Whatshot, Search, Tv, Favorite, Home } from '@material-ui/icons';
+//Botones de menu
+import { Whatshot, Search, Tv, Favorite, Home } from '@material-ui/icons';
 
 import { useHistory } from 'react-router';
 
@@ -30,12 +25,11 @@ export default function SimpleBottomNavigation() {
   const history = useHistory();
 
   useEffect(() => {
-    if(value === 0) history.push('/');
-    else if(value === 1) history.push('/home');
-    else if(value === 2) history.push('/movies');
-    else if(value === 3) history.push('/populares');
-    else if(value === 4) history.push('/series');
-    else if(value === 5) history.push('/search');
+    if(value === 0) history.push('/home');
+    else if(value === 1) history.push('/ultimoslanzamientos');
+    else if(value === 2) history.push('/populares');
+    else if(value === 3) history.push('/series');
+    else if(value === 4) history.push('/search');
 
   }, [value, history]);
 
@@ -50,12 +44,12 @@ export default function SimpleBottomNavigation() {
     >
     <BottomNavigationAction 
       style={{color: 'white'}}
-      label="TV series"
+      label="Inicio"
        icon={<Home />} 
     />
     <BottomNavigationAction
         style={{color: 'white'}}
-        label="Trending"
+        label="Lanzamientos"
         icon={<Whatshot />}
     />
     <BottomNavigationAction 
@@ -63,12 +57,6 @@ export default function SimpleBottomNavigation() {
       label="Populares"
        icon={<Favorite />} 
     />
-    <BottomNavigationAction 
-      style={{color: 'white'}}
-      label="Movies"
-       icon={<Movie />} 
-    />
- 
     <BottomNavigationAction 
       style={{color: 'white'}}
       label="TV series"
