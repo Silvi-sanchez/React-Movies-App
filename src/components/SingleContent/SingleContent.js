@@ -19,6 +19,16 @@ const RatingIcon = styled(FontAwesomeIcon).attrs({ icon: faStar })`
   margin: 0 0.25rem 0 0;
 `;
 
+const StyledTitle = styled.h5`
+  position: absolute;
+  bottom: 0;
+  margin: 0.0rem;
+  padding: 0.0rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+`;
+
+
 const SingleContent = ({
     id,
     poster,
@@ -34,11 +44,6 @@ const SingleContent = ({
             src={poster ? `${img_300}${poster}` : unavailable}
             alt={title}
             />
-            <b className="title"> {title} </b>
-            <span className="subTitle">
-                {media_type === "tv" ? "TV Series" : "Movie"}
-                <span className="subTitle">{date}</span>
-            </span>
 
             {vote_average !== 0 ? 
                 <StyledRating>
@@ -48,6 +53,11 @@ const SingleContent = ({
                 : 
                 <span></span>
             }
+
+            {<StyledTitle>
+                {title}
+                <span className="subTitle">{date}</span>
+            </StyledTitle>}
         </div>
     )
 };
