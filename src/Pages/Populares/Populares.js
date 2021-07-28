@@ -19,8 +19,6 @@ const CardContainer = styled.div`
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   color: white;
 
-//   :hover {
-//     cursor: pointer;
 
 //     backface-visibility: hidden;
 //     transform: scale(1.05);

@@ -43,28 +43,28 @@ export default function SimpleBottomNavigation() {
       className={classes.root}
     >
     <BottomNavigationAction 
-      style={{color: 'white'}}
+      style={{color: 'darkgrey'}}
       label="Inicio"
        icon={<Home />} 
     />
     <BottomNavigationAction
-        style={{color: 'white'}}
+        style={{color: 'darkgrey'}}
         label="Lanzamientos"
         icon={<Whatshot />}
     />
     <BottomNavigationAction 
-      style={{color: 'white'}}
+      style={{color: 'darkgrey'}}
       label="Populares"
        icon={<Favorite />} 
     />
     <BottomNavigationAction 
-      style={{color: 'white'}}
+      style={{color: 'darkgrey'}}
       label="TV series"
        icon={<Tv />} 
     />
 
     <BottomNavigationAction
-      style={{color: 'white'}}
+      style={{color: 'darkgrey'}}
       label="Search"
       icon={<Search/>} 
     />
