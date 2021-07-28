@@ -2,7 +2,6 @@ import {Container} from '@material-ui/core';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
-import SimpleBottomNavigation from './components/MainNav';
 import Home from './Pages/Home/Home';
 import UltimosLanzamientos from './Pages/UltimosLanzamientos/UltimosLanzamientos';
 import Populares from './Pages/Populares/Populares'
@@ -13,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
     <Header/>
-    <div className="app"></div>
+    
     <Container>
       <Switch>
       <Route path="/home" component={Home} exact/>
@@ -26,7 +25,7 @@ function App() {
       </Switch>
     </Container>
 
-    <SimpleBottomNavigation/>
+   
     
     </BrowserRouter>
   );

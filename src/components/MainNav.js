@@ -11,11 +11,11 @@ import { useHistory } from 'react-router';
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
-    position: 'fixed',
-    bottom: 0,
-    backgroundColor:'#2d313a',
+    width: "100%",
+    position: 'contents',
+    backgroundColor:'transparent',
     zIndex: 100,
+    top: 62, 
   },
 });
 
