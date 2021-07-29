@@ -3,7 +3,7 @@ import React from 'react'
 const Busqueda = () => {
     return (
         <div>
-        <span className="pageTitle">Busqueda</span>
+        <span className="pageTitle">PROXIMAMENTE Busqueda</span>
         </div>
     )
 }
