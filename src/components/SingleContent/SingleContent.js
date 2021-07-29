@@ -26,6 +26,8 @@ const StyledTitle = styled.h5`
   padding: 0.0rem;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
+  color: white;
+  text-align: center;
 `;
 
 
