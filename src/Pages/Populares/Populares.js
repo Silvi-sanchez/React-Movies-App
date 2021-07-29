@@ -75,6 +75,7 @@ const Populares = () => {
 
     useEffect(() => {
         fetchTrending();
+        // eslint-disable-next-line
     }, [page]);
 
     

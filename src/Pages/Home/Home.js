@@ -4,7 +4,7 @@ import React from 'react';
 const Home = () => {
     return (
         <div>
-        <span className="pageTitle">Home</span>
+        <span className="pageTitle">PROXIMAMENTE Home</span>
 
         </div>
     )
