@@ -1,54 +1,42 @@
-/* .slider.movies{
-    height: 10vh;
-    justify-content: center;
-    width: 20px;
-} */
+.slider-movies{
+    height: 53vh;
+    width: 100%;
+}
 
 .slider-movies__movie{
-    height: 52vh;
+    height: 55vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
 }
 
 .slider-movies__movie-info{
     display: flex;
     align-items: flex-end;
-    height: 50vh;
-    padding-bottom: 40px;
+    height: 100%;
+    padding-bottom: 50px;
 }
             
 .div-info{
-    background-color: #a7a7a7cf;
+    background-color: #8d8c8ccf;
     margin: 0 auto;
     text-align: center;
+    width: 60%;
+    padding-bottom: 13px;
+    color: black;
 }
 
-.slick-track{
-    transform: translate3d(0px, 0px, 0px) !important;
-    height: 20vh;
+.boton{
+    padding-bottom: 5px;
+    color:rgb(212, 202, 202);
+    border-radius: 70px;
 }
 
-.ant-carousel .slick-slider {
-    position: relative;
-    display: block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-    }
+.titulo{
+    color: rgb(39, 39, 39);
+}
 
-    .ant-carousel{
-    -webkit-font-feature-settings: 'tnum';
-    }
-
-    /* .carrousel{
-        height: 160px;
-        color: #fff;
-        line-Height: 160px;
-        text-Align: center;
-        background: #364d79;
-      }; */
-    
+.parrafo{
+    padding-bottom: 10px;
+    color: rgb(36, 36, 36);
+}

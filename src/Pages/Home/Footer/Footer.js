@@ -11,7 +11,7 @@ const Footer = () => {
 
     return (
         <Footer className="footer">
-            <p>
+            <p className="texto">
                 Raquel Muriega y Silvina Sánchez
             </p>
         </Footer>

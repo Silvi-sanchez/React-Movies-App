@@ -1,10 +1,8 @@
 import useFetch from './hooks/useFetch';
-// import { URL_API, REACT_APP_API_KEY } from '.env';
 import { Row, Col } from 'antd';
 
 import SliderMovies from './SliderMovies';
 import MovieList from './MovieList';
-import Footer from './Footer';
 
 const REACT_APP_API_KEY = '9c0cae2349f71e57d0b415386e382c68'
 const URL_API = 'https://api.themoviedb.org/3'
@@ -23,15 +21,14 @@ const Home = () => {
     return (
         <div>
             <SliderMovies movies={newMovies} />
-            {/* <Row>
+            <Row>
                 <Col span={12}>
                     <MovieList title="Películas Populares" movies={popularMovies} />
                 </Col>
                 <Col span={12}>
                     <MovieList title="Top Mejores Películas" movies={topRankedMovies} />
                 </Col>
-            </Row> */}
-            <Footer />
+            </Row> 
         </div>
     )
 }

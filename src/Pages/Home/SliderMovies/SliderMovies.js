@@ -16,7 +16,7 @@ const SliderMovies = (props) => {
   const { results } = movies.result;
 
   return (
-    <Carousel autoplay>
+    <Carousel autoplay className="slider-movies">
       {results.map(movie => (
           <Movie key={movie.id} movie={movie} />
         ))}
@@ -38,10 +38,10 @@ const Movie = (props) => {
     >
       <div className="slider-movies__movie-info">
         <div className="div-info">
-          <h2>{title}</h2>
-          <p>{overview}</p>
+          <h2 className="titulo">{title}</h2>
+          <p className="parrafo">{overview}</p>
           <Link to={`/movie/${id}`}>
-            <Button type="primary">Ver mas... </Button>
+            <Button className="boton" type="danger">Ver mas... </Button>
           </Link>
         </div>
       </div>

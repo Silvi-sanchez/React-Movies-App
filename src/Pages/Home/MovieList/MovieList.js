@@ -1,5 +1,6 @@
 import React from 'react';
 import { List, Avatar, Button } from 'antd';
+import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom';
 import Loading from '../Loading';
 import { RightOutlined } from '@ant-design/icons';
@@ -38,14 +39,15 @@ const RenderMovie = props => {
     const posterPath = `https://image.tmdb.org/t/p/original${poster_path}`
 
     return(
-      <List.Item className="movie-list__movie">
+      <List.Item className="list-movie__movie">
         <List.Item.Meta 
           avatar={ <Avatar src={posterPath} />}
           title={ <Link to={`/movie/${id}`}>{title}</Link> }
         />
         <Link to={`/movie/${id}`}>
         <Button 
-            type="primary" 
+            className="boton-info"
+            type="secundary" 
             shape="circle" 
             icon={<RightOutlined />} 
         /> 
