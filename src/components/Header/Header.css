@@ -1,7 +1,6 @@
 
 .header{
-    width:96%;
-    margin-bottom: 10px;
+    width:100%;
     cursor:pointer;
     height: fit-content;
     align-items: center;
@@ -13,9 +12,9 @@
     background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-left: 4%;
     font-size:3vw;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
     box-shadow: 0px 1px 5px black;
-    color: cadetblue;
+    color: rgb(39, 39, 39);
     z-index: 100;
     font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -33,7 +32,10 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    color: cadetblue;
+    color: rgb(181 176 176);
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
 }
 
 @media (max-width:1000px) {
