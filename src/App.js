@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
     <Header/>
     
-    <Container>
+    <Container maxWidth={false}>
       <Switch>
       <Route path="/home" component={Home} exact/>
         {/* <Route path="/" component={Trending} /> */}
