@@ -3,7 +3,7 @@ import { useEffect,useState} from 'react';
 import SingleContent from '../../components/SingleContent/SingleContent';
 import './Populares.css';
 import styled from "styled-components";
-
+import CustomPagination from "../../components/Pagination/CustomPagination"
 
 //Styled components section cards
 const CardContainer = styled.div`
@@ -19,10 +19,6 @@ const CardContainer = styled.div`
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   color: white;
 
-
-//     backface-visibility: hidden;
-//     transform: scale(1.05);
-//   }
 
   :active {
     transform: translateY(-0.1rem);
@@ -64,13 +60,14 @@ const CardContainer = styled.div`
 
 const Populares = () => {
 
+    const [page, setPage] = useState(1)
     const [content, setContent] = useState([]);
 
     const fetchTrending = async () => {
         console.log('process.env.REACT_APP_API_KEY')
         console.log(process.env.REACT_APP_API_KEY)
         const { data } = await axios.get(
-            `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}`
+            `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`
         );
         
         setContent(data.results);
@@ -78,7 +75,8 @@ const Populares = () => {
 
     useEffect(() => {
         fetchTrending();
-    }, []);
+        // eslint-disable-next-line
+    }, [page]);
 
     
  
@@ -101,7 +99,7 @@ const Populares = () => {
                         {/*<StyledTitle>{movie.title}</StyledTitle>*/}
                     </div>
                 ))}
-            
+            <CustomPagination setPage={setPage}/>
         </CardContainer>
     )
 }

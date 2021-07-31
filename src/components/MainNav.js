@@ -29,7 +29,7 @@ export default function SimpleBottomNavigation() {
     else if(value === 1) history.push('/ultimoslanzamientos');
     else if(value === 2) history.push('/populares');
     else if(value === 3) history.push('/series');
-    else if(value === 4) history.push('/search');
+    else if(value === 4) history.push('/busqueda');
 
   }, [value, history]);
 
@@ -65,7 +65,7 @@ export default function SimpleBottomNavigation() {
 
     <BottomNavigationAction
       style={{color: 'darkgrey'}}
-      label="Search"
+      label="Busqueda"
       icon={<Search/>} 
     />
 
