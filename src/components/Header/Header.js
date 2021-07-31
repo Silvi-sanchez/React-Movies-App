@@ -9,7 +9,6 @@ const Header = () => {
         <span onClick={() =>window.scroll(0,0)} className="header">
             <div className="title-Header">
             <img className='estilos-imagen' src={logo}  alt="logo"/>
-            REACT MOVIES
             </div>   
             <br/>
             <MainNav/>
