@@ -68,13 +68,13 @@ const Movies = () => {
   }, [page]);
 
   return (
-    <div className='lanzamientosEstilos'>
+    <div className='trending'>
       {/* <span className="pageTitle">Discover Movies</span> */}
       <Autocomplete
         id="combo-box-demo"
         options={genres}
         getOptionLabel={(option) => option.name}
-        style={{ width: '19%', borderRadius: '30px' ,backgroundColor: 'dimgrey'}}
+        style={{ width: '19%', borderRadius: '14px' ,backgroundColor: 'dimgrey', marginLeft: 'auto'}}
         renderInput={(params) => (
           <TextField {...params} label="Géneros" variant="outlined" />
         )}

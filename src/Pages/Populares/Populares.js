@@ -7,10 +7,11 @@ import CustomPagination from "../../components/Pagination/CustomPagination"
 
 //Styled components section cards
 const CardContainer = styled.div`
-  position: relative;
-  flex: 0 0 calc(20% - 40px);
-  margin: 36px 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin: 2%;
 
   /* margin: 1.55vw 1vw; */
 
@@ -82,6 +83,7 @@ const Populares = () => {
  
 
     return (
+      <div className="styledPopular">
         <CardContainer className='tarjetasEstilos'>
             {/* <span className="pageTitle"></span> */}
                 {content && content.map((movie)=> (
@@ -101,6 +103,7 @@ const Populares = () => {
                 ))}
             <CustomPagination setPage={setPage}/>
         </CardContainer>
+        </div>
     )
 }
 

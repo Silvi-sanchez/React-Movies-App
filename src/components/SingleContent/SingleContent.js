@@ -22,10 +22,10 @@ const RatingIcon = styled(FontAwesomeIcon).attrs({ icon: faStar })`
 const StyledTitle = styled.h5`
   position: absolute;
   bottom: 0;
-  margin: 0.0rem;
+  margin-bottom: 2.5%;
   padding: 0.0rem;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
+  width: 96%;
   color: white;
   text-align: center;
 `;

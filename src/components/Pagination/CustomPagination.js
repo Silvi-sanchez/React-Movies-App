@@ -20,6 +20,7 @@ const customPagination = ({setPage, numOfPages = 50}) => {
     <div>
         <ThemeProvider theme={darkTheme}>
             <Pagination 
+            className="paginationStyles"
             count={numOfPages}
             onChange = {(e) => handlePageChange(e.target.textContent)}
             variant="outlined"
