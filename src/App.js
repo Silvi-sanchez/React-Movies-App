@@ -4,6 +4,7 @@ import './App.css';
 
 import Header from './components/Header/Header';
 import Home from './Pages/Home/Home';
+import Movie from './Pages/Movie/Movie';
 import UltimosLanzamientos from './Pages/UltimosLanzamientos/UltimosLanzamientos';
 import Populares from './Pages/Populares/Populares'
 import Series from './Pages/Series/Series';
@@ -19,13 +20,13 @@ function App() {
     
     <Container maxWidth={false}>
       <Switch>
-      <Route path="/home" component={Home} exact/>
+      <Route path="/home" component={Home} />
         {/* <Route path="/" component={Trending} /> */}
         <Route path="/ultimosLanzamientos" component={UltimosLanzamientos}/>
         <Route path="/populares" component={Populares}/>
         <Route path="/series" component={Series}/>
         <Route path="/busqueda" component={Busqueda}/>
-        {/* <Route path='/movie/:id' exact={true} component={Movie} /> */}
+        <Route path='/movie/:id' exact={true} component={Movie} />
 
       </Switch>
     </Container>

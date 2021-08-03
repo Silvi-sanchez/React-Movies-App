@@ -59,6 +59,12 @@ body {
   color: #61dafb;
 }
 
+.MuiContainer-root {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -80,6 +86,11 @@ body {
   }
 }
 
+@media (min-width: 600px){
+  .MuiContainer-root {
+    padding-left: 0px !important; 
+    padding-right: 0px !important;
+  }
 
 .trending {
   display: flex;
