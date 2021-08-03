@@ -9,7 +9,7 @@
     background-color: rgb(45 41 51);
 }
 
-h2{
+.ant-list-header h2{
     text-align: center;
     margin: 0;
     color: white;
@@ -31,4 +31,8 @@ h2{
 
 .boton-info{
     background-color: rgb(101, 97, 109);
+}
+
+.ant-row{
+    margin-bottom: 35px;
 }
