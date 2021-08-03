@@ -79,3 +79,12 @@ body {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin: 2%;
+}
