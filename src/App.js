@@ -1,5 +1,5 @@
 import {Container} from '@material-ui/core';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
 import './App.css';
 
 import Header from './components/Header/Header';
@@ -14,6 +14,7 @@ import Footer from './Pages/Home/Footer';
 function App() {
 
   return (
+    <HashRouter basename='/'>
     <BrowserRouter>
     <Header/>
     
@@ -33,6 +34,8 @@ function App() {
    
     <Footer />
     </BrowserRouter>
+    </HashRouter>
+
   );
 }
 
