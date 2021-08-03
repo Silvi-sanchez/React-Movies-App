@@ -26,8 +26,8 @@ const customPagination = ({setPage, numOfPages = 50}) => {
             variant="outlined"
             shape="rounded"
             color="primary"
-            // hideNextButton
-            // hidePrevButton
+            hideNextButton
+            hidePrevButton
             />
         </ThemeProvider>
     </div>
