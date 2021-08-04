@@ -1,5 +1,5 @@
 .movie{
-    height: calc( 100vh );
+    height: 103vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -9,7 +9,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: calc( 100vh + 158px  );
+    height: calc( 100vh + 130px );
     width: 100%;
     background-color: black;
     opacity: .6;
@@ -22,7 +22,7 @@
 }
 
 .movie__poster{
-    height: 70vh;
+    height: 60vh;
 }
 
 .movie__poster div{

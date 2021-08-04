@@ -10,30 +10,30 @@ import Populares from './Pages/Populares/Populares'
 import Series from './Pages/Series/Series';
 import Busqueda from './Pages/Busqueda/Busqueda';
 import Footer from './Pages/Home/Footer';
+import Error404 from './Pages/Error404';
 
 function App() {
 
   return (
-    <HashRouter basename='/'>
-    <BrowserRouter>
+    <HashRouter basename="/">
     <Header/>
     
     <Container maxWidth={false}>
       <Switch>
-      <Route path="/home" component={Home} />
+        <Route path="/home" exact={true} component={Home} />
         {/* <Route path="/" component={Trending} /> */}
-        <Route path="/ultimosLanzamientos" component={UltimosLanzamientos}/>
-        <Route path="/populares" component={Populares}/>
-        <Route path="/series" component={Series}/>
-        <Route path="/busqueda" component={Busqueda}/>
-        <Route path='/movie/:id' exact={true} component={Movie} />
+        <Route path="/ultimosLanzamientos" exact={true} component={UltimosLanzamientos}/>
+        <Route path="/populares" exact={true} component={Populares}/>
+        <Route path="/series" exact={true} component={Series}/>
+        <Route path="/busqueda" exact={true} component={Busqueda}/>
+        <Route path="/movie/:id" exact={true} component={Movie} />
+        <Route path="*" component={Error404} />
 
       </Switch>
     </Container>
 
    
     <Footer />
-    </BrowserRouter>
     </HashRouter>
 
   );
