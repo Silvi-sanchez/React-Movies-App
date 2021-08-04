@@ -12,8 +12,6 @@ import {
   import axios from "axios";
   import CustomPagination from "../../components/Pagination/CustomPagination";
   import SingleContent from "../../components/SingleContent/SingleContent";
-
-  import Error404 from '../Error404';
   
   const Busqueda = () => {
     const [type, setType] = useState(0);
