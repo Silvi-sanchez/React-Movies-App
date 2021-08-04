@@ -15,3 +15,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.error404-container{
+  height: 100vh;
+  text-decoration-color: white;
+}
+
+.ant-result-title,
+.ant-result-subtitle {
+  color: rgb(226, 209, 209) !important;
+}
