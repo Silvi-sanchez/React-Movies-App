@@ -28,6 +28,7 @@ const VideoModal = (props) => {
       visible={isOpen}
       centered
       onCancel={close}
+      footer={false}
     >
       <ReactPlayer 
         url={urlVideo}
