@@ -1,5 +1,5 @@
 import {Container} from '@material-ui/core';
-import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import './App.css';
 
 import Header from './components/Header/Header';
@@ -21,7 +21,6 @@ function App() {
     <Container maxWidth={false}>
       <Switch>
         <Route path="/home" exact={true} component={Home} />
-        {/* <Route path="/" component={Trending} /> */}
         <Route path="/ultimosLanzamientos" exact={true} component={UltimosLanzamientos}/>
         <Route path="/populares" exact={true} component={Populares}/>
         <Route path="/series" exact={true} component={Series}/>
