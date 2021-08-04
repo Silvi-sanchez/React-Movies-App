@@ -1,9 +1,10 @@
-import React from 'react';
-import { img_300, unavailable } from '../../config/config';
+import React from "react";
+import { img_300, unavailable } from "../../config/config";
 import "./SingleContent.css";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { /*useHistory,*/ Link } from "react-router-dom";
 
 const StyledRating = styled.div`
   position: absolute;
@@ -23,45 +24,59 @@ const StyledTitle = styled.h5`
   position: absolute;
   bottom: 0;
   margin-bottom: 2.5%;
-  padding: 0.0rem;
+  padding: 0rem;
   background-color: rgba(0, 0, 0, 0.6);
   width: 96%;
   color: white;
   text-align: center;
 `;
 
-
 const SingleContent = ({
-    id,
-    poster,
-    title,
-    date,
-    media_type,
-    vote_average,
+  id,
+  poster,
+  title,
+  date,
+  media_type,
+  vote_average,
 }) => {
-    return (
-        <div className='media'>
-            <img
-            className="poster"
-            src={poster ? `${img_300}${poster}` : unavailable}
-            alt={title}
-            />
+  /*
+  forma javascriptera
 
-            {vote_average !== 0 ? 
-                <StyledRating>
-                    <RatingIcon />
-                    {vote_average}
-                </StyledRating> 
-                : 
-                <span></span>
-            }
+  let history = useHistory();
 
-            {<StyledTitle>
-                {title}
-                <span className="subTitle">{date}</span>
-            </StyledTitle>}
-        </div>
-    )
+  const handleClick = (e, id) => {
+    e.preventDefault();
+    history.push(`/movie/${id}`);
+  };
+  */
+
+  return (
+    <Link to={`/movie/${id}`}>
+      <div className="media" /*onClick={(event) => handleClick(event, id)}*/>
+        <img
+          className="poster"
+          src={poster ? `${img_300}${poster}` : unavailable}
+          alt={title}
+        />
+
+        {vote_average !== 0 ? (
+          <StyledRating>
+            <RatingIcon />
+            {vote_average}
+          </StyledRating>
+        ) : (
+          <span></span>
+        )}
+
+        {
+          <StyledTitle>
+            {title}
+            <span className="subTitle">{date}</span>
+          </StyledTitle>
+        }
+      </div>
+    </Link>
+  );
 };
 
-export default SingleContent
+export default SingleContent;
