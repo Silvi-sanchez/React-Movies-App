@@ -2,7 +2,6 @@ import React, {useState  } from 'react';
 import { Row, Col, Button } from 'antd'
 import 'antd/dist/antd.css';
 import { useParams } from 'react-router-dom'
-import moment from 'moment'
 import useFetch from '../Home/hooks/useFetch'
 import Loading from '../Home/Loading'
 import VideoModal from '../../components/VideoModal/VideoModal';
@@ -61,7 +60,6 @@ const MovieInfoComponent = props => {
   const { movieInfo: {
     title, 
     id, 
-    release_date, 
     overview, 
     genres 
     } 
@@ -97,7 +95,6 @@ const MovieInfoComponent = props => {
     <div> 
       <div className="movie__info-header">
         <h1 className="titulo-info-header">{title}
-          {/* <span className="span-info-header">{moment(release_date, "YYYY-MM-DD").format("YYYY") }</span> */}
         </h1>
         {renderVideo()}
       </div>
