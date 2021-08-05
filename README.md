@@ -9,7 +9,7 @@ La información de las mismas se consigue utilizando la API Rest de [The Movie D
 ## Haciendo click [aquí](https://reymga.github.io/home) podrás comenzar a disfrutarlo!!🍿🕶
 
 
-###👩‍💻👩‍💻***Para elaborar este Proyecto utilizamos las siguientes dependencias:***
+### 👩‍💻👩‍💻 ***Para elaborar este Proyecto utilizamos las siguientes dependencias:***
 
 
 👉📁 [React Router](https://reactrouter.com/)
