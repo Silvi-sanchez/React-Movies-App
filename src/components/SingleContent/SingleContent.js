@@ -51,7 +51,7 @@ const SingleContent = ({
   */
 
   return (
-    <Link to={`/movie/${id}`}>
+    <Link to={`/${media_type}/${id}`}>
       <div className="media" /*onClick={(event) => handleClick(event, id)}*/>
         <img
           className="poster"

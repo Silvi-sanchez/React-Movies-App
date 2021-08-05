@@ -12,9 +12,9 @@ import './Movie.css'
 const REACT_APP_API_KEY = '9c0cae2349f71e57d0b415386e382c68';
 const URL_API = 'https://api.themoviedb.org/3';
 
-const Movie = () => {
+const Tv = () => {
   const {id} = useParams()
-  const movieInfo = useFetch(`${URL_API}/movie/${id}?api_key=${REACT_APP_API_KEY}&language=es-ES`)
+  const movieInfo = useFetch(`${URL_API}/tv/${id}?api_key=${REACT_APP_API_KEY}&language=es-ES`)
 
   if(movieInfo.loading  || !movieInfo.result){
     return <Loading />
@@ -27,9 +27,9 @@ const Movie = () => {
 const RenderMovie = props => {
   const { movieInfo: {
             backdrop_path, 
-            poster_path 
-        } 
-  } = props
+            poster_path,
+            } 
+        } = props
 
   const backdropPath = `https://image.tmdb.org/t/p/original//${backdrop_path}`
 
@@ -97,15 +97,14 @@ const MovieInfoComponent = props => {
     <div> 
       <div className="movie__info-header">
         <h1 className="titulo-info-header">{title}
-          <span className="span-info-header">{moment(release_date, "YYYY-MM-DD").format("YYYY") }</span>
+          {/* <span className="span-info-header">{moment(release_date, "YYYY-MM-DD").format("YYYY") }</span> */}
         </h1>
-        
         {renderVideo()}
       </div>
       <div className="movie__info-content">
         <h3 className="letras-info">General</h3>
-          <p>{overview}</p>
-        <h3 className="letras-info">Géneros</h3>
+          <p>{overview ===''? 'No se encontró descripción para esta película' : overview}</p>
+        <h3 className="letras-info">Generos</h3>
         <ul>
           {genres.map(gen => (
             <li key={gen.id} >{gen.name}</li>
@@ -116,4 +115,4 @@ const MovieInfoComponent = props => {
   )
 }
 
-export default Movie;
+export default Tv;
