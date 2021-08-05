@@ -25,3 +25,14 @@ La información de las mismas se consigue utilizando la API Rest de [The Movie D
 👉📁 [React-player](https://github.com/CookPete/react-player)
 
 
+## 👨‍💻 Si querés tener el código en tu computadora, deberás seguir estos pasos en tu terminal:
+
+### ✔️Ir al repositorio
+### ✔️Darle click al botón de forkear
+### ✔️Darle click al botón de code
+### ✔️Abrir tu terminal y poner el comando de git clone <url>
+### ✔️Entrar a la carpeta del proyecto y abrirlo en tu IDE 
+
+## Y listo! Podrás disfrutar de este proyecto 🤗
+
+
