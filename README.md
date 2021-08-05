@@ -1,11 +1,13 @@
 # 🎞🕶***Movie App by Raquel y Silvina***🎥🎬
 
+![Movie App](./public/movie-app.png)
+
 ## Desarrollamos una aplicación en [React](https://es.reactjs.org/) que permite  realizar distintas búsquedas de películas y series.
 La información de las mismas se consigue utilizando la API Rest de [The Movie Database](https://www.themoviedb.org/).
 <br>
 
 ## Haciendo click [aquí](https://reymga.github.io/home) podrás comenzar a disfrutarlo!!🍿🕶
-[Movie App](./public/movie-app.png)
+
 
 ###👩‍💻👩‍💻***Para elaborar este Proyecto utilizamos las siguientes dependencias:***
 
