@@ -10,11 +10,13 @@ const Footer = () => {
     const { Footer } = Layout;
 
     return (
-        <Footer className="footer">
-            <p className="texto">
-                Creado por Raquel Muriega y Silvina Sánchez
-            </p>
-        </Footer>
+        <div>
+            <Footer className="footer">
+                <p className="texto">
+                    Creado por Raquel Muriega y Silvina Sánchez
+                </p>
+            </Footer>
+        </div>
     );
 }
 
