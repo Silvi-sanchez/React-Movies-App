@@ -78,6 +78,10 @@ body {
   .app {
     padding-top: 70px;
   }
+
+  .MuiBottomNavigationAction-root {
+    min-width: 55px !important;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -86,11 +90,52 @@ body {
   }
 }
 
-@media (min-width: 600px){
+
+@media (max-width: 424px){
+  .muiAutocomplete-root{
+    width: 10%;
+  }
+
+  .header {
+    padding-left: 0px;
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .MuiBottomNavigationAction-root,
+  .MuiBottomNavigationAction-label.Mui-selected {
+    padding: -3px 32px 8px;
+  }
+}
+
+
+@media (max-width: 600px){
   .MuiContainer-root {
     padding-left: 0px !important; 
     padding-right: 0px !important;
+    padding: 12px 15px 8px;
+    min-width: 50px !important;
   }
+
+  .MuiBottomNavigationAction-label,
+  .MuiBottomNavigationAction-label.Mui-selected {
+    font-size: 0.65rem !important;
+  }
+
+  .jss1{
+    width: 70%;
+    z-index: 100;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px){
+  .MuiBottomNavigationAction-root{
+    padding: 8px 33px 8px;
+  }
+
+  .title-Header {
+    display: block;
+}
 }
 
 .trending {
