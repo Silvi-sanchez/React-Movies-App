@@ -34,6 +34,7 @@ export default function SimpleBottomNavigation() {
   }, [value, history]);
 
   return (
+    <div className="jss1">
     <BottomNavigation
       value={value}
       onChange={(event, newValue) => {
@@ -70,6 +71,6 @@ export default function SimpleBottomNavigation() {
     />
 
     </BottomNavigation>
-
+    </div>
   );
 }

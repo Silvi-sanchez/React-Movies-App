@@ -40,3 +40,21 @@
         font-size: 6.4vw;
     }
 }
+
+@media (max-width:768px) {
+    .estilos-imagen {
+        width: 100px;
+    }
+}
+
+@media (max-width:424px) {
+    .title-Header {
+        display: none;
+    }
+}
+
+@media ( max-width: 380px ){
+    .header{
+        justify-content: center;
+    }
+}

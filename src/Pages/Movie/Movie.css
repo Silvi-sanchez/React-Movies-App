@@ -19,6 +19,7 @@
     height: 100vh !important;
     display: flex !important;
     align-items: center !important;
+    width: 100%;
 }
 
 .movie__poster{
@@ -32,7 +33,7 @@
     background-size: contain;
 }
 
- .movie__info{
+.movie__info{
     color: white;
     height: 75%;
 }
@@ -70,4 +71,91 @@
     color: rgb(170, 170, 170);;
     font-weight: bold;
     font-size: 1em ;
+}
+
+
+
+@media ( max-width: 1250px ){
+  .row-movie{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .movie,
+  .movie__poster{
+    align-self: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .ant-col-9{
+    max-width: 80%;
+  }
+
+  .movie__info-content{
+    width: 75%;
+  }
+
+  .movie-info{
+    width: 100%;
+  }
+
+  .buton-trailer{
+    font-size: 25px;
+    padding: 0;
+  }
+
+  .info{
+    flex-direction: column;
+    font-size: 25px;
+  }
+
+  .movie__info-content{
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+
+}
+
+@media ( max-width: 750px ){
+    .movie,
+    .movie__poster{
+        margin-right: 50px;
+    }
+
+    .movie__poster  div{
+        width: 250px;
+    }
+}
+
+@media ( max-width: 480px ){
+    .movie,
+    .movie__poster div{
+        margin-left: -40px;
+    }
+
+    .button{
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .parrafo-info{
+        font-size: 10px;
+    }
+}
+
+@media ( max-width: 420px ){
+    .movie,
+    .movie__poster div{
+        margin-left: -40px;
+    }
+}
+
+@media ( max-width: 380px ){
+  .movie-info{
+    width: 100%;
+  }
 }
