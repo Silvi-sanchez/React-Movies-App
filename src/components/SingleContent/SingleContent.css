@@ -14,16 +14,11 @@
   .media:hover {
     transform: scale(1.1);
     box-shadow: 5px 0px 3px rgba(0, 0, 0, 0.404);
-}
-
-  @media (max-width: 550px) {
-    .media {
-      width: 46%;
-    }
   }
   
   .poster {
     border-radius: 10px;
+    height: 49vh;
   }
   
   .title {

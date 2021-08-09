@@ -2,7 +2,9 @@ import SingleContent from '../../components/SingleContent/SingleContent';
 import CustomPagination from "../../components/Pagination/CustomPagination"
 
 
+
 const MoviesCard = ({content, setPage, numOfPages, type='movie'}) => {
+
     return (
         <div className="trending">
                 {content && content.map((movie)=> (

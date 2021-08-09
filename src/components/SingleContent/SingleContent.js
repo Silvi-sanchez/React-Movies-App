@@ -1,5 +1,7 @@
-import React from "react";
-import { img_300, unavailable } from "../../config/config";
+import React from 'react';
+import { img_300 } from '../../config/config';
+import unavailable from '../../images/notFound.jpg';
+
 import "./SingleContent.css";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -55,10 +57,9 @@ const SingleContent = ({
       <div className="media" /*onClick={(event) => handleClick(event, id)}*/>
         <img
           className="poster"
-          src={poster ? `${img_300}${poster}` : unavailable}
+          src={poster && poster !== '' ? `${img_300}${poster}` : unavailable}
           alt={title}
         />
-
         {vote_average !== 0 ? (
           <StyledRating>
             <RatingIcon />
@@ -68,15 +69,15 @@ const SingleContent = ({
           <span></span>
         )}
 
-        {
-          <StyledTitle>
-            {title}
-            <span className="subTitle">{date}</span>
-          </StyledTitle>
-        }
-      </div>
-    </Link>
-  );
+
+            {<StyledTitle>
+                {title}
+                <span className="subTitle">{date}</span>
+            </StyledTitle>}
+        </div>
+        </Link>
+    )
+
 };
 
 export default SingleContent;
