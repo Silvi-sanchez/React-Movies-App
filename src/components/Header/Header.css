@@ -19,9 +19,13 @@
 }
 
 .estilos-imagen{
-    width: 260px;    
+    width: 215px;    
+    margin-right: 76vh;
 }
 
+.jss1{
+    width: 100%!important;
+}
 
 .title-Header{
     display: flex;
