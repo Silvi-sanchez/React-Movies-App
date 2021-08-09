@@ -25,3 +25,10 @@
 .ant-layout-footer{
     padding: 0px 50px;
 }
+
+
+@media ( max-width: 424px ){
+    .texto{
+        font-size: 11px;
+    }
+}

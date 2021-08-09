@@ -1,6 +1,7 @@
 import React from 'react';
 import { img_300 } from '../../config/config';
 import unavailable from '../../images/notFound.jpg';
+
 import "./SingleContent.css";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,39 +26,49 @@ const StyledTitle = styled.h5`
   position: absolute;
   bottom: 0;
   margin-bottom: 2.5%;
-  padding: 0.0rem;
+  padding: 0rem;
   background-color: rgba(0, 0, 0, 0.6);
   width: 96%;
   color: white;
   text-align: center;
 `;
 
-
 const SingleContent = ({
-    id,
-    poster,
-    title,
-    date,
-    media_type,
-    vote_average,
+  id,
+  poster,
+  title,
+  date,
+  media_type,
+  vote_average,
 }) => {
-    return (
-        <Link to={`/${media_type}/${id}`}>
-        <div className='media'>
-            <img
-            className="poster"
-            src={poster && poster !== '' ? `${img_300}${poster}` : unavailable}
-            alt={title}
-            />
+  /*
+  forma javascriptera
 
-            {vote_average !== 0 ? 
-                <StyledRating>
-                    <RatingIcon />
-                    {vote_average}
-                </StyledRating> 
-                : 
-                <span></span>
-            }
+  let history = useHistory();
+
+  const handleClick = (e, id) => {
+    e.preventDefault();
+    history.push(`/movie/${id}`);
+  };
+  */
+
+  return (
+    <Link to={`/${media_type}/${id}`}>
+      <div className="media" /*onClick={(event) => handleClick(event, id)}*/>
+        <img
+          className="poster"
+          src={poster && poster !== '' ? `${img_300}${poster}` : unavailable}
+          alt={title}
+        />
+        {vote_average !== 0 ? (
+          <StyledRating>
+            <RatingIcon />
+            {vote_average}
+          </StyledRating>
+        ) : (
+          <span></span>
+        )}
+
 
             {<StyledTitle>
                 {title}
@@ -66,6 +77,7 @@ const SingleContent = ({
         </div>
         </Link>
     )
+
 };
 
-export default SingleContent
+export default SingleContent;

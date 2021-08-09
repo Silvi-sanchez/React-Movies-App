@@ -4,8 +4,11 @@ import { Row, Col } from 'antd';
 import SliderMovies from './SliderMovies';
 import MovieList from './MovieList';
 
+import './Home.css';
+
 const REACT_APP_API_KEY = '9c0cae2349f71e57d0b415386e382c68'
 const URL_API = 'https://api.themoviedb.org/3'
+
 
 const Home = () => {
     const url = `${URL_API}/movie/now_playing?api_key=${REACT_APP_API_KEY}&language=es-ES&page=1`

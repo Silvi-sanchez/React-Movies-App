@@ -115,6 +115,7 @@
     margin-top: 16%;
   }
 
+
   .MuiBottomNavigation-root makeStyles-root-1{
     margin-top:4%
   }
@@ -136,6 +137,7 @@
   .MuiBottomNavigation-root makeStyles-root-1{
     height:2%;
   } 
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -144,7 +146,26 @@
   }
 }
 
-@media (min-width: 600px){
+
+@media (max-width: 424px){
+  .muiAutocomplete-root{
+    width: 10%;
+  }
+
+  .header {
+    padding-left: 0px;
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .MuiBottomNavigationAction-root,
+  .MuiBottomNavigationAction-label.Mui-selected {
+    padding: -3px 32px 8px;
+  }
+}
+
+
+@media (max-width: 600px){
   .MuiContainer-root {
     padding-left: 0px !important; 
     padding-right: 0px !important;
@@ -160,6 +181,7 @@
   background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
+
 
 
 
