@@ -9,8 +9,6 @@ const Series = () => {
     const [numOfPages, setNumOfPages] = useState();
 
     const fetchTrending = async () => {
-        console.log('process.env.REACT_APP_API_KEY')
-        console.log(process.env.REACT_APP_API_KEY)
         const { data } = await axios.get(
             `https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`
             );
@@ -26,7 +24,7 @@ const Series = () => {
 
     return (
       <div className='trending'>
-        <MoviesCard content={content} setPage={setPage} numOfPages={numOfPages}></MoviesCard>
+        <MoviesCard content={content} type='tv' setPage={setPage} numOfPages={numOfPages}></MoviesCard>
       </div>
     )
 }

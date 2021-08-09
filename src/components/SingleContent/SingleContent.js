@@ -1,9 +1,11 @@
 import React from 'react';
-import { img_300, unavailable } from '../../config/config';
+import { img_300 } from '../../config/config';
+import unavailable from '../../images/notFound.jpg';
 import "./SingleContent.css";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { /*useHistory,*/ Link } from "react-router-dom";
 
 const StyledRating = styled.div`
   position: absolute;
@@ -40,10 +42,11 @@ const SingleContent = ({
     vote_average,
 }) => {
     return (
+        <Link to={`/${media_type}/${id}`}>
         <div className='media'>
             <img
             className="poster"
-            src={poster ? `${img_300}${poster}` : unavailable}
+            src={poster && poster !== '' ? `${img_300}${poster}` : unavailable}
             alt={title}
             />
 
@@ -61,6 +64,7 @@ const SingleContent = ({
                 <span className="subTitle">{date}</span>
             </StyledTitle>}
         </div>
+        </Link>
     )
 };
 

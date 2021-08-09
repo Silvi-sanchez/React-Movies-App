@@ -1,7 +1,7 @@
 import SingleContent from '../../components/SingleContent/SingleContent';
 import CustomPagination from "../../components/Pagination/CustomPagination"
 
-const MoviesCard = ({content, setPage, numOfPages}) => {
+const MoviesCard = ({content, setPage, numOfPages,type}) => {
     return (
         <div className="trending">
                 {content && content.map((movie)=> (
@@ -11,7 +11,7 @@ const MoviesCard = ({content, setPage, numOfPages}) => {
                         poster={movie.poster_path} 
                         title={movie.title || movie.name} 
                         date={movie.first_air_date || movie.release_date } 
-                        media_type={movie.media_type}
+                        media_type={type}
                         vote_average ={movie.vote_average}
                         />
                 ))}

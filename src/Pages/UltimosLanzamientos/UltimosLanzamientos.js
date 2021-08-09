@@ -45,7 +45,7 @@ const Movies = () => {
         id="combo-box-demo"
         options={genres}
         getOptionLabel={(option) => option.name}
-        style={{ width: '19%', borderRadius: '14px' ,backgroundColor: 'dimgrey', marginLeft: 'auto'}}
+        style={{ width: '33%', borderRadius: '14px' ,backgroundColor: 'dimgrey', marginLeft: 'auto'}}
         renderInput={(params) => (
           <TextField {...params} label="Géneros" variant="outlined" />
         )}
