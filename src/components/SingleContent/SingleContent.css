@@ -18,7 +18,8 @@
   
   .poster {
     border-radius: 10px;
-    /* height: 49vh; */
+    height: 303px;
+    width: 200px;
   }
   
   .title {
