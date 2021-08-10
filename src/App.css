@@ -4,13 +4,11 @@
 
 .app {
   min-height: 100vh;
-  background-color: #39445a; 
+  background-color: #39445a;
   color: white;
   padding-top: 130px;
   padding-bottom: 70px;
 }
-
-
 
 .pageTitle {
   text-transform: uppercase;
@@ -28,19 +26,15 @@
     font-size: 6.4vw;
   }
 
-  .header{
+  .header {
     width: 100% !important;
   }
 }
-
-
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-
 
 .App-header {
   background-color: #282c34;
@@ -62,7 +56,6 @@
   padding-right: 0px !important;
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -81,20 +74,18 @@
 }
 
 @media (max-width: 700px) {
-  body{
-    background-color: darkred!important;
+  body {
+    background-color: darkred !important;
   }
 
-  html{
+  html {
     background: darkred;
   }
 
-  .MuiBottomNavigationAction-label{
+  .MuiBottomNavigationAction-label {
     display: none;
   }
 
-
- 
   element.style {
     width: 26%;
     border-radius: 14px;
@@ -102,28 +93,24 @@
     margin-left: auto;
   }
 
-  .MuiSvgIcon-root{
+  .MuiSvgIcon-root {
     font-size: 21.2px;
     margin-top: 16%;
   }
 
-
-  .MuiBottomNavigation-root makeStyles-root-1{
-    margin-top:4%
+  .MuiBottomNavigation-root makeStyles-root-1 {
+    margin-top: 4%;
   }
-  .MuiBottomNavigationAction-wrapper{
+  .MuiBottomNavigationAction-wrapper {
     margin-right: 52%;
   }
-  .estilos-imagen{
+  .estilos-imagen {
     display: none;
   }
-  
 
-
-  .MuiBottomNavigation-root makeStyles-root-1{
-    height:2%;
-  } 
-
+  .MuiBottomNavigation-root makeStyles-root-1 {
+    height: 2%;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -132,9 +119,8 @@
   }
 }
 
-
-@media (max-width: 425px){
-  .muiAutocomplete-root{
+@media (max-width: 425px) {
+  .muiAutocomplete-root {
     width: 100%;
   }
 
@@ -149,35 +135,30 @@
     padding: -3px 32px 8px;
   }
 
-  .jss1{
-    width: 94%!important;
+  .jss1 {
+    width: 94% !important;
   }
 
-  .ant-carousel{
+  .ant-carousel {
     width: 100%;
   }
 }
 
-
-
-@media (min-width: 768px){
-  body{
-  background: #870000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+@media (min-width: 768px) {
+  body {
+    background: #870000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#190a05,#870000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#190a05,#870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 
-
 @media (max-width: 767px) {
-  .MuiAutocomplete-hasPopupIcon{
+  .MuiAutocomplete-hasPopupIcon {
     width: 36% !important;
   }
 
-  .MuiBottomNavigationAction-root{
+  .MuiBottomNavigationAction-root {
     min-width: 60px !important;
     justify-content: space-between !important;
   }
 }
-
-
