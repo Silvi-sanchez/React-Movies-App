@@ -24,15 +24,6 @@
   color: white;
 }
 
-@media (max-width: 1000px) {
-  .pageTitle {
-    font-size: 6.4vw;
-  }
-
-  .header{
-    width: fit-content!important;
-  }
-}
 
 
 
@@ -49,7 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between!important;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -81,13 +72,41 @@
   margin: 3%;
 }
 
+.MuiBottomNavigationAction-root {
+  min-width: 0px!important;
+}
+
+MuiButtonBase-root MuiBottomNavigationAction-root{
+  flex: 1;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 2px 15px 8px;
+  max-width: 168px;
+  /* min-width: 80px; */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,padding-top 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+@media (max-width: 1000px) {
+  .pageTitle {
+    font-size: 6.4vw;
+  }
+
+  /* .header{
+    /* width: 100%!important;
+    display: flex;
+    justify-content: space-between!important; */
+  
+}
+
+
+
 @media (max-width: 700px) {
   body{
     background-color: darkred!important;
+    width: 100%!important;
   }
 
   html{
-    max-width: 108%;
+    /* max-width: 108%; */
     background: darkred;
   }
 
@@ -102,6 +121,13 @@
     margin-top: 7%;
   }
 
+  .MuiBottomNavigationAction-root.Mui-selected{
+    padding-top: 8px!important;
+  }
+
+  .ant-layout-footer {
+     padding: 0px 0px;
+  }
  
   element.style {
     width: 26%;
@@ -112,30 +138,28 @@
 
   .MuiSvgIcon-root{
     font-size: 21.2px;
-    margin-top: 16%;
   }
-
 
   .MuiBottomNavigation-root makeStyles-root-1{
-    margin-top:4%
+    margin-top:4%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
   }
+
   .MuiBottomNavigationAction-wrapper{
     margin-right: 52%;
   }
   .estilos-imagen{
     display: none;
   }
-  
- /* .MuiContainer-root{
-    width: 107%;
-  } */
 
   #root{
     width: 100%;
   }
 
   .MuiBottomNavigation-root makeStyles-root-1{
-    height:2%;
+    margin-left: 10%;
   } 
 
 }
@@ -148,14 +172,14 @@
 
 
 @media (max-width: 424px){
-  .muiAutocomplete-root{
+  /* .muiAutocomplete-root{
     width: 10%;
-  }
+  } */
 
   .header {
     padding-left: 0px;
     width: 100%;
-    padding-right: 40px;
+    padding-right: 20px;
   }
 
   .MuiBottomNavigationAction-root,
@@ -168,7 +192,7 @@
   }
 
   .ant-carousel{
-    width: 71vh;
+    width: 100%;
   }
 }
 
@@ -177,7 +201,6 @@
   .MuiContainer-root {
     padding-left: 0px !important; 
     padding-right: 0px !important;
-    width: 0px 15px 8px !important;
   }
   
 
@@ -186,7 +209,6 @@
   }
 
   .jss1{
-    width: 70%;
     z-index: 100;
   }
 
