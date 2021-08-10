@@ -39,12 +39,6 @@
     font-size: 0.87rem !important;
 }
 
-/* @media (min-width:1023px) and (max-width: 1440px){
-    .MuiBottomNavigationAction-root{
-        min-width: 80px !important;
-    }
-} */
-
 @media (max-width:1000px) {
     .header{
         padding: top 15px;

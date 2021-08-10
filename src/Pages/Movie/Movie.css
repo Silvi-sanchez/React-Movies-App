@@ -106,7 +106,7 @@
   }
 
   .parrafo-info {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .movie__info-content {
@@ -159,7 +159,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .movie,
   .movie__dark {
-    height: 100vh;
+    height: 150vh;
     width: 100%;
   }
 
@@ -176,10 +176,10 @@
   }
 
   .parrafo-info {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .letras-info {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
