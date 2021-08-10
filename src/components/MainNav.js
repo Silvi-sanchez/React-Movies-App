@@ -44,7 +44,7 @@ export default function SimpleBottomNavigation() {
       className={classes.root}
     >
     <BottomNavigationAction 
-      style={{color: 'darkgrey'}}
+      style={{color: 'darkgrey', minWidth: '0px'}}
       label="Inicio"
        icon={<Home />} 
     />
