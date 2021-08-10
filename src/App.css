@@ -126,9 +126,9 @@
     display: none;
   }
   
- .MuiContainer-root{
+ /* .MuiContainer-root{
     width: 107%;
-  }
+  } */
 
   #root{
     width: 100%;
@@ -162,6 +162,14 @@
   .MuiBottomNavigationAction-label.Mui-selected {
     padding: -3px 32px 8px;
   }
+
+  .jss1{
+    width: 94%!important;
+  }
+
+  .ant-carousel{
+    width: 71vh;
+  }
 }
 
 
@@ -169,9 +177,22 @@
   .MuiContainer-root {
     padding-left: 0px !important; 
     padding-right: 0px !important;
-    width: 108%;
+    width: 0px 15px 8px !important;
+  }
+  
+
+  .MuiBottomNavigationAction-label.Mui-selected{
+    font-size:0.65rem!important;
   }
 
+  .jss1{
+    width: 70%;
+    z-index: 100;
+  }
+
+  .title-Header{
+    width: 25vh;
+  }
 }
 
 @media (min-width: 768px){
@@ -182,6 +203,12 @@
   }
 }
 
+
+@media (max-width: 767px) {
+  .MuiAutocomplete-hasPopupIcon{
+    width: 36% !important;
+  }
+}
 
 
 
