@@ -1,6 +1,5 @@
 * {
   scroll-behavior: smooth;
-  /* color: rgb(221, 211, 211); */
 }
 
 .app {
@@ -30,7 +29,7 @@
   }
 
   .header{
-    width: fit-content!important;
+    width: 100% !important;
   }
 }
 
@@ -87,20 +86,13 @@
   }
 
   html{
-    max-width: 108%;
     background: darkred;
   }
 
   .MuiBottomNavigationAction-label{
     display: none;
   }
-  .MuiBottomNavigationAction-wrapper{
-    margin-top: 40%;
-  }
-  .MuiBottomNavigationAction-wrapper{
-    margin-left: 32%;
-    margin-top: 7%;
-  }
+
 
  
   element.style {
@@ -126,13 +118,7 @@
     display: none;
   }
   
- /* .MuiContainer-root{
-    width: 107%;
-  } */
 
-  #root{
-    width: 100%;
-  }
 
   .MuiBottomNavigation-root makeStyles-root-1{
     height:2%;
@@ -147,9 +133,9 @@
 }
 
 
-@media (max-width: 424px){
+@media (max-width: 425px){
   .muiAutocomplete-root{
-    width: 10%;
+    width: 100%;
   }
 
   .header {
@@ -168,32 +154,11 @@
   }
 
   .ant-carousel{
-    width: 71vh;
+    width: 100%;
   }
 }
 
 
-@media (max-width: 600px){
-  .MuiContainer-root {
-    padding-left: 0px !important; 
-    padding-right: 0px !important;
-    width: 0px 15px 8px !important;
-  }
-  
-
-  .MuiBottomNavigationAction-label.Mui-selected{
-    font-size:0.65rem!important;
-  }
-
-  .jss1{
-    width: 70%;
-    z-index: 100;
-  }
-
-  .title-Header{
-    width: 25vh;
-  }
-}
 
 @media (min-width: 768px){
   body{
@@ -208,7 +173,11 @@
   .MuiAutocomplete-hasPopupIcon{
     width: 36% !important;
   }
-}
 
+  .MuiBottomNavigationAction-root{
+    min-width: 60px !important;
+    justify-content: space-between !important;
+  }
+}
 
 

@@ -1,5 +1,5 @@
 .movie{
-    height: 103vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -7,31 +7,39 @@
 
 .movie__dark{
     position: absolute;
-    top: 0;
+    top: 82;
     left: 0;
-    height: calc( 100vh + 130px );
+    height: 100vh;
     width: 100%;
     background-color: black;
     opacity: .6;
 }
 
-.row-movie{
-    height: 100vh !important;
-    display: flex !important;
-    align-items: center !important;
-    width: 100%;
-}
-
 .movie__poster{
     height: 60vh;
+    margin-left: 200px;
+    margin-right: -80px;
 }
 
 .movie__poster div{
     height: 100%;
+    width: 300px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
     background-size: contain;
+    margin:0;
 }
+
+.row-movie{
+  display: flex !important;
+  height: 100% !important;
+  align-items: center !important;
+  width: 100%;
+}
+
+.ant-col-9{
+  max-width: 50%
+};
 
 .movie__info{
     color: white;
@@ -42,30 +50,36 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 70%;
 }
 
 .titulo-info-header{
     color: white;
     margin: 0;
     font-size: 2.5em;
-    width: -webkit-fill-available;
 }
 
 .span-info-header{
-    font-size: .5em;
-    margin-left: 2%;
-    opacity: .6;
+    font-size: 20px;
+    margin-left: 12px;
+    opacity: .7;
 }
 
 .boton-trailer{
     height: 100%; 
-    background-color: transparent;
-    color: #ffffff;
+    background-color: rgb(216, 215, 215);
+    color:black;
     border: 0;
-    font-size: 1.3em;
+    font-size: 16px;
     border-radius: 40px;
 }
 
+.boton-trailer:hover{
+  color: rgb(34, 23, 66);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 
 .letras-info{
     color: rgb(170, 170, 170);;
@@ -73,89 +87,104 @@
     font-size: 1em ;
 }
 
-
-
-@media ( max-width: 1250px ){
-  .row-movie{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .movie,
-  .movie__poster{
-    align-self: center;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .ant-col-9{
-    max-width: 80%;
-  }
-
-  .movie__info-content{
-    width: 75%;
-  }
-
-  .movie-info{
-    width: 100%;
-  }
-
-  .buton-trailer{
-    font-size: 25px;
-    padding: 0;
-  }
-
-  .info{
-    flex-direction: column;
-    font-size: 25px;
-  }
-
-  .movie__info-content{
-    margin-left: 10px;
-    font-size: 25px;
-  }
-
-
+.movie__info-content{
+  margin-top: 50px;
 }
 
-@media ( max-width: 750px ){
-    .movie,
-    .movie__poster{
-        margin-right: 50px;
-    }
-
-    .movie__poster  div{
-        width: 250px;
-    }
+.parrafo-info{
+  color: white;
 }
+
+
 
 @media ( max-width: 480px ){
-    .movie,
     .movie__poster div{
         margin-left: -40px;
-    }
+    } 
 
-    .button{
-        font-size: 10px;
-        padding: 0;
+    .boton-trailer{
+      font-size: 12px;
+      padding: 3px 3px 3px;
     }
 
     .parrafo-info{
-        font-size: 10px;
+        font-size: 9px;
     }
+
+  .movie__info-content {
+    margin-left: -60px;
+    width: 140%;
+  }
+  .movie__poster div{
+    margin-left: -150px;
+  
 }
 
-@media ( max-width: 420px ){
-    .movie,
-    .movie__poster div{
-        margin-left: -40px;
-    }
+.titulo-info-header{
+  font-size: 15px;
+  padding-right: 5px;
+  padding-top: 15px;
+}
+.span-info-header{
+  font-size: 12px;
+  padding-right: 5px;
+  padding-top: 10px;
 }
 
-@media ( max-width: 380px ){
-  .movie-info{
+.letras-info{
+  font-size: 12px;
+}
+} 
+
+@media ( max-width: 767px ){
+  .movie,
+  .movie__dark{
+    height: 160vh;
+  }
+
+  .movie__poster{
+    margin-right: 50px;
+  } 
+
+  .movie__poster  div{
+      width: 250px;
+  }
+
+  .movie__info-content {
+    margin-left: -60px;
+    width: 150%;
+  }
+  .movie__poster div{
+    margin-left: -160px;
+  
+  } 
+}
+
+@media ( min-width: 768px ) and (max-width: 1024px) {
+  .movie,
+  .movie__dark{
+    height: 100vh;
     width: 100%;
   }
+
+  .movie__poster  div{
+      width: 200px;
+  }
+
+  .movie__info-content {
+    margin-left: -60px;
+    width: 100%;
+  }
+  .movie__poster div{
+    margin-left: -130px;
+  
+  } 
+
+.parrafo-info{
+  font-size: 17px;
+}
+
+.letras-info{
+  font-size: 25px;
+}
 }

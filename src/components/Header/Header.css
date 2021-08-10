@@ -23,9 +23,6 @@
     width: 200px;    
 }
 
-.jss1{
-    width: 94%!important;
-}
 
 .title-Header{
     display: flex;
@@ -38,10 +35,21 @@
     font-weight: 500;
 }
 
+.MuiBottomNavigationAction-label {
+    font-size: 0.87rem !important;
+}
+
+/* @media (min-width:1023px) and (max-width: 1440px){
+    .MuiBottomNavigationAction-root{
+        min-width: 80px !important;
+    }
+} */
+
 @media (max-width:1000px) {
     .header{
         padding: top 15px;
         font-size: 6.4vw;
+        width: 100%;
     }
 }
 
@@ -51,9 +59,35 @@
     }
 }
 
+
+@media (max-width:600px) {
+    .MuiContiner-root {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding: 0px 15px 8px;
+    }
+}
+
 @media (max-width:424px) {
     .title-Header {
         display: none;
+    }
+
+    .jss1{
+        width: 94%!important;
+    }
+
+    .header{
+        padding-left: 0px;
+        width: 100% !important;
+        display: flex;
+        padding-right: 0px;
+        justify-content: space-between;
+    }
+
+    .MuiBottomNavigationAction-root,
+    .MuiBottomNavigationAction-label.Mui-selected{
+        padding: -3px 32pxd 8px !important;
     }
 }
 
@@ -62,3 +96,14 @@
         justify-content: center;
     }
 }
+
+@media (min-width:425px) and (max-width: 767px){
+    .MuiBottomNavigationAction-root{
+        padding: 8px 33px 8px;
+        min-width: 64px !important;
+    }
+  
+    .title-Header{
+        display: block;
+    }
+  }

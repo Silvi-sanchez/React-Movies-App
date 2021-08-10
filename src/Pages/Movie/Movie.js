@@ -106,7 +106,7 @@ const MovieInfoComponent = props => {
         <h3 className="letras-info">General</h3>
           <p className="parrafo-info">{overview}</p>
         <h3 className="letras-info">Géneros</h3>
-        <ul>
+        <ul className="parrafo-info">
           {genres.map(gen => (
             <li key={gen.id} >{gen.name}</li>
           ))}
